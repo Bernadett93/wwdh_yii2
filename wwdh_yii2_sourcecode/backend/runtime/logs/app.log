@@ -1,0 +1,352 @@
+2018-08-20 11:56:41 [127.0.0.1][-][ipgr323on5m2otrl4uj8g8i3g9][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::username in C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(2193): yii\base\Component->__get('username')
+#1 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(1323): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'username')
+#2 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'username', Array)
+#3 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'username', Array)
+#4 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\views\site\login.php(22): yii\widgets\ActiveField->textInput(Array)
+#5 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\Users\\Szenti...')
+#6 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\Users\\Szenti...', Array)
+#7 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\Users\\Szenti...', Array, Object(backend\controllers\SiteController))
+#8 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(backend\controllers\SiteController))
+#9 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\controllers\SiteController.php(84): yii\base\Controller->render('login', Array)
+#10 [internal function]: backend\controllers\SiteController->actionLogin()
+#11 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-08-20 11:56:40 [127.0.0.1][-][ipgr323on5m2otrl4uj8g8i3g9][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'bc7aa460ed92194f9f3205ecc553d5c6a016faf25258d3b992c3340a24eb6799a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"GyBtCKERBJbfQmAN73YLrdlIX1FCW8-A\",2592000]\";}'
+    'PHPSESSID' => 'fg8eelg4avjof0hbfh5s2jhlmg'
+    '_csrf' => 'ab52a2b40be5be1a7cefeb54b04c5555f9abd1de6339c3c650bee473c47b618aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"o25Keu9jDtBzoKIs9uPzP6RV6vg5JYSk\";}'
+    'advanced-frontend' => 'tcjjhalmvdiruucvti9p8f9enp'
+    '_csrf-frontend' => 'ea2f52a9860e236c4735429d78903a2978a045063047a92d4a54c8adbf4edfd5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CFTHsUT56GeNQSmsJdTyE0EWzpHDZScY\";}'
+    'advanced-backend' => 'ipgr323on5m2otrl4uj8g8i3g9'
+    '_csrf-backend' => '207af9a2de0bb40bf9ebe0655c2db7daf4a90baef83598f74d8bafdc166698bfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-pMdGuLyEznnvpr2DYHfxmbqfGpazMFV\";}'
+    '_identity-frontend' => '621f9181928ecf71656f67944f249b5d6341768fcb72472276b304b37f524b9fa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4N0_euOfcgbYHHtm49Tzaqoxtd-xeG2U\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/wwdh_yii2/backend/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'hu-HU,hu;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/wwdh_yii2/backend/'
+    'HTTP_COOKIE' => '_identity-backend=bc7aa460ed92194f9f3205ecc553d5c6a016faf25258d3b992c3340a24eb6799a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22GyBtCKERBJbfQmAN73YLrdlIX1FCW8-A%22%2C2592000%5D%22%3B%7D; PHPSESSID=fg8eelg4avjof0hbfh5s2jhlmg; _csrf=ab52a2b40be5be1a7cefeb54b04c5555f9abd1de6339c3c650bee473c47b618aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22o25Keu9jDtBzoKIs9uPzP6RV6vg5JYSk%22%3B%7D; advanced-frontend=tcjjhalmvdiruucvti9p8f9enp; _csrf-frontend=ea2f52a9860e236c4735429d78903a2978a045063047a92d4a54c8adbf4edfd5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CFTHsUT56GeNQSmsJdTyE0EWzpHDZScY%22%3B%7D; advanced-backend=ipgr323on5m2otrl4uj8g8i3g9; _csrf-backend=207af9a2de0bb40bf9ebe0655c2db7daf4a90baef83598f74d8bafdc166698bfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-pMdGuLyEznnvpr2DYHfxmbqfGpazMFV%22%3B%7D; _identity-frontend=621f9181928ecf71656f67944f249b5d6341768fcb72472276b304b37f524b9fa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224N0_euOfcgbYHHtm49Tzaqoxtd-xeG2U%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\apps\\jdk1.8.0_171\\bin;c:\\apps\\apache-maven-3.5.4\\bin;C:\\xampp\\php;C:\\composer;C:\\Users\\Szenti Bernadett\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Szenti Bernadett\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/7.1.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/wwdh_yii2/backend/web/index.php'
+    'REMOTE_PORT' => '55198'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/wwdh_yii2/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/wwdh_yii2/backend/web/index.php'
+    'PHP_SELF' => '/wwdh_yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1534759000.863
+    'REQUEST_TIME' => 1534759000
+]
+2018-08-20 11:57:43 [127.0.0.1][-][ipgr323on5m2otrl4uj8g8i3g9][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::username in C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(2193): yii\base\Component->__get('username')
+#1 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(1323): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'username')
+#2 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'username', Array)
+#3 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'username', Array)
+#4 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\views\site\login.php(22): yii\widgets\ActiveField->textInput(Array)
+#5 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\Users\\Szenti...')
+#6 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\Users\\Szenti...', Array)
+#7 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\Users\\Szenti...', Array, Object(backend\controllers\SiteController))
+#8 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(backend\controllers\SiteController))
+#9 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\controllers\SiteController.php(84): yii\base\Controller->render('login', Array)
+#10 [internal function]: backend\controllers\SiteController->actionLogin()
+#11 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-08-20 11:57:43 [127.0.0.1][-][ipgr323on5m2otrl4uj8g8i3g9][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'bc7aa460ed92194f9f3205ecc553d5c6a016faf25258d3b992c3340a24eb6799a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"GyBtCKERBJbfQmAN73YLrdlIX1FCW8-A\",2592000]\";}'
+    'PHPSESSID' => 'fg8eelg4avjof0hbfh5s2jhlmg'
+    '_csrf' => 'ab52a2b40be5be1a7cefeb54b04c5555f9abd1de6339c3c650bee473c47b618aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"o25Keu9jDtBzoKIs9uPzP6RV6vg5JYSk\";}'
+    'advanced-frontend' => 'tcjjhalmvdiruucvti9p8f9enp'
+    '_csrf-frontend' => 'ea2f52a9860e236c4735429d78903a2978a045063047a92d4a54c8adbf4edfd5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CFTHsUT56GeNQSmsJdTyE0EWzpHDZScY\";}'
+    'advanced-backend' => 'ipgr323on5m2otrl4uj8g8i3g9'
+    '_csrf-backend' => '207af9a2de0bb40bf9ebe0655c2db7daf4a90baef83598f74d8bafdc166698bfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-pMdGuLyEznnvpr2DYHfxmbqfGpazMFV\";}'
+    '_identity-frontend' => '621f9181928ecf71656f67944f249b5d6341768fcb72472276b304b37f524b9fa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4N0_euOfcgbYHHtm49Tzaqoxtd-xeG2U\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/wwdh_yii2/backend/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'hu-HU,hu;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=bc7aa460ed92194f9f3205ecc553d5c6a016faf25258d3b992c3340a24eb6799a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22GyBtCKERBJbfQmAN73YLrdlIX1FCW8-A%22%2C2592000%5D%22%3B%7D; PHPSESSID=fg8eelg4avjof0hbfh5s2jhlmg; _csrf=ab52a2b40be5be1a7cefeb54b04c5555f9abd1de6339c3c650bee473c47b618aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22o25Keu9jDtBzoKIs9uPzP6RV6vg5JYSk%22%3B%7D; advanced-frontend=tcjjhalmvdiruucvti9p8f9enp; _csrf-frontend=ea2f52a9860e236c4735429d78903a2978a045063047a92d4a54c8adbf4edfd5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CFTHsUT56GeNQSmsJdTyE0EWzpHDZScY%22%3B%7D; advanced-backend=ipgr323on5m2otrl4uj8g8i3g9; _csrf-backend=207af9a2de0bb40bf9ebe0655c2db7daf4a90baef83598f74d8bafdc166698bfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-pMdGuLyEznnvpr2DYHfxmbqfGpazMFV%22%3B%7D; _identity-frontend=621f9181928ecf71656f67944f249b5d6341768fcb72472276b304b37f524b9fa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224N0_euOfcgbYHHtm49Tzaqoxtd-xeG2U%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\apps\\jdk1.8.0_171\\bin;c:\\apps\\apache-maven-3.5.4\\bin;C:\\xampp\\php;C:\\composer;C:\\Users\\Szenti Bernadett\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Szenti Bernadett\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/7.1.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/wwdh_yii2/backend/web/index.php'
+    'REMOTE_PORT' => '55329'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/wwdh_yii2/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/wwdh_yii2/backend/web/index.php'
+    'PHP_SELF' => '/wwdh_yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1534759063.804
+    'REQUEST_TIME' => 1534759063
+]
+2018-08-20 11:57:49 [127.0.0.1][-][ipgr323on5m2otrl4uj8g8i3g9][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::username in C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(2193): yii\base\Component->__get('username')
+#1 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(1323): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'username')
+#2 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'username', Array)
+#3 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'username', Array)
+#4 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\views\site\login.php(22): yii\widgets\ActiveField->textInput(Array)
+#5 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\Users\\Szenti...')
+#6 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\Users\\Szenti...', Array)
+#7 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\Users\\Szenti...', Array, Object(backend\controllers\SiteController))
+#8 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(backend\controllers\SiteController))
+#9 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\controllers\SiteController.php(84): yii\base\Controller->render('login', Array)
+#10 [internal function]: backend\controllers\SiteController->actionLogin()
+#11 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-08-20 11:57:49 [127.0.0.1][-][ipgr323on5m2otrl4uj8g8i3g9][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'bc7aa460ed92194f9f3205ecc553d5c6a016faf25258d3b992c3340a24eb6799a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"GyBtCKERBJbfQmAN73YLrdlIX1FCW8-A\",2592000]\";}'
+    'PHPSESSID' => 'fg8eelg4avjof0hbfh5s2jhlmg'
+    '_csrf' => 'ab52a2b40be5be1a7cefeb54b04c5555f9abd1de6339c3c650bee473c47b618aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"o25Keu9jDtBzoKIs9uPzP6RV6vg5JYSk\";}'
+    'advanced-frontend' => 'tcjjhalmvdiruucvti9p8f9enp'
+    '_csrf-frontend' => 'ea2f52a9860e236c4735429d78903a2978a045063047a92d4a54c8adbf4edfd5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CFTHsUT56GeNQSmsJdTyE0EWzpHDZScY\";}'
+    'advanced-backend' => 'ipgr323on5m2otrl4uj8g8i3g9'
+    '_csrf-backend' => '207af9a2de0bb40bf9ebe0655c2db7daf4a90baef83598f74d8bafdc166698bfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-pMdGuLyEznnvpr2DYHfxmbqfGpazMFV\";}'
+    '_identity-frontend' => '621f9181928ecf71656f67944f249b5d6341768fcb72472276b304b37f524b9fa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4N0_euOfcgbYHHtm49Tzaqoxtd-xeG2U\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/wwdh_yii2/backend/web/index.php?r=site'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'hu-HU,hu;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=bc7aa460ed92194f9f3205ecc553d5c6a016faf25258d3b992c3340a24eb6799a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22GyBtCKERBJbfQmAN73YLrdlIX1FCW8-A%22%2C2592000%5D%22%3B%7D; PHPSESSID=fg8eelg4avjof0hbfh5s2jhlmg; _csrf=ab52a2b40be5be1a7cefeb54b04c5555f9abd1de6339c3c650bee473c47b618aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22o25Keu9jDtBzoKIs9uPzP6RV6vg5JYSk%22%3B%7D; advanced-frontend=tcjjhalmvdiruucvti9p8f9enp; _csrf-frontend=ea2f52a9860e236c4735429d78903a2978a045063047a92d4a54c8adbf4edfd5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CFTHsUT56GeNQSmsJdTyE0EWzpHDZScY%22%3B%7D; advanced-backend=ipgr323on5m2otrl4uj8g8i3g9; _csrf-backend=207af9a2de0bb40bf9ebe0655c2db7daf4a90baef83598f74d8bafdc166698bfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-pMdGuLyEznnvpr2DYHfxmbqfGpazMFV%22%3B%7D; _identity-frontend=621f9181928ecf71656f67944f249b5d6341768fcb72472276b304b37f524b9fa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224N0_euOfcgbYHHtm49Tzaqoxtd-xeG2U%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\apps\\jdk1.8.0_171\\bin;c:\\apps\\apache-maven-3.5.4\\bin;C:\\xampp\\php;C:\\composer;C:\\Users\\Szenti Bernadett\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Szenti Bernadett\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/7.1.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/wwdh_yii2/backend/web/index.php'
+    'REMOTE_PORT' => '55330'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/wwdh_yii2/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/wwdh_yii2/backend/web/index.php'
+    'PHP_SELF' => '/wwdh_yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1534759069.122
+    'REQUEST_TIME' => 1534759069
+]
+2018-08-20 11:58:16 [127.0.0.1][-][ipgr323on5m2otrl4uj8g8i3g9][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\LoginForm::username in C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(2193): yii\base\Component->__get('username')
+#1 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(1323): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\LoginForm), 'username')
+#2 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('text', Object(common\models\LoginForm), 'username', Array)
+#3 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\LoginForm), 'username', Array)
+#4 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\views\site\login.php(22): yii\widgets\ActiveField->textInput(Array)
+#5 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\Users\\Szenti...')
+#6 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\Users\\Szenti...', Array)
+#7 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\Users\\Szenti...', Array, Object(backend\controllers\SiteController))
+#8 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('login', Array, Object(backend\controllers\SiteController))
+#9 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\controllers\SiteController.php(84): yii\base\Controller->render('login', Array)
+#10 [internal function]: backend\controllers\SiteController->actionLogin()
+#11 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#14 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#15 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\Users\Szenti Bernadett\Documents\Berni\Programozas\wwdh_yii2\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-08-20 11:58:16 [127.0.0.1][-][ipgr323on5m2otrl4uj8g8i3g9][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'bc7aa460ed92194f9f3205ecc553d5c6a016faf25258d3b992c3340a24eb6799a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"GyBtCKERBJbfQmAN73YLrdlIX1FCW8-A\",2592000]\";}'
+    'PHPSESSID' => 'fg8eelg4avjof0hbfh5s2jhlmg'
+    '_csrf' => 'ab52a2b40be5be1a7cefeb54b04c5555f9abd1de6339c3c650bee473c47b618aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"o25Keu9jDtBzoKIs9uPzP6RV6vg5JYSk\";}'
+    'advanced-frontend' => 'lot1fhj15m301s4mauclid8ilv'
+    '_csrf-frontend' => 'ea2f52a9860e236c4735429d78903a2978a045063047a92d4a54c8adbf4edfd5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CFTHsUT56GeNQSmsJdTyE0EWzpHDZScY\";}'
+    'advanced-backend' => 'ipgr323on5m2otrl4uj8g8i3g9'
+    '_csrf-backend' => '207af9a2de0bb40bf9ebe0655c2db7daf4a90baef83598f74d8bafdc166698bfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"-pMdGuLyEznnvpr2DYHfxmbqfGpazMFV\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/wwdh_yii2/backend/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'hu-HU,hu;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=bc7aa460ed92194f9f3205ecc553d5c6a016faf25258d3b992c3340a24eb6799a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22GyBtCKERBJbfQmAN73YLrdlIX1FCW8-A%22%2C2592000%5D%22%3B%7D; PHPSESSID=fg8eelg4avjof0hbfh5s2jhlmg; _csrf=ab52a2b40be5be1a7cefeb54b04c5555f9abd1de6339c3c650bee473c47b618aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22o25Keu9jDtBzoKIs9uPzP6RV6vg5JYSk%22%3B%7D; advanced-frontend=lot1fhj15m301s4mauclid8ilv; _csrf-frontend=ea2f52a9860e236c4735429d78903a2978a045063047a92d4a54c8adbf4edfd5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CFTHsUT56GeNQSmsJdTyE0EWzpHDZScY%22%3B%7D; advanced-backend=ipgr323on5m2otrl4uj8g8i3g9; _csrf-backend=207af9a2de0bb40bf9ebe0655c2db7daf4a90baef83598f74d8bafdc166698bfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22-pMdGuLyEznnvpr2DYHfxmbqfGpazMFV%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\apps\\jdk1.8.0_171\\bin;c:\\apps\\apache-maven-3.5.4\\bin;C:\\xampp\\php;C:\\composer;C:\\Users\\Szenti Bernadett\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Szenti Bernadett\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/7.1.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/7.1.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/Szenti Bernadett/Documents/Berni/Programozas/wwdh_yii2/backend/web/index.php'
+    'REMOTE_PORT' => '55398'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/wwdh_yii2/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/wwdh_yii2/backend/web/index.php'
+    'PHP_SELF' => '/wwdh_yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1534759096.656
+    'REQUEST_TIME' => 1534759096
+]
